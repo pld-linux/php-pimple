@@ -19,6 +19,7 @@ BuildRequires:	phpunit
 %endif
 Requires:	php(core) >= %{php_min_version}
 Requires:	php(spl)
+Provides:	php(pimple) = %{version}
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
