@@ -13,6 +13,8 @@ Group:		Development/Languages/PHP
 Source0:	https://github.com/silexphp/Pimple/archive/v%{version}/%{pkgname}-%{version}.tar.gz
 # Source0-md5:	09c5470d679cf31187289aa89d039926
 URL:		http://pimple.sensiolabs.org/
+BuildRequires:	%{php_name}-iconv
+BuildRequires:	%{php_name}-spl
 %if %{with tests}
 BuildRequires:	phpab
 BuildRequires:	phpunit
