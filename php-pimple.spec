@@ -6,13 +6,14 @@
 %define		php_min_version 5.3.0
 Summary:	A simple dependency injection container for PHP
 Name:		php-%{pkgname}
-Version:	3.0.1
+Version:	3.0.2
 Release:	1
 License:	MIT
 Group:		Development/Languages/PHP
 Source0:	https://github.com/silexphp/Pimple/archive/v%{version}/%{pkgname}-%{version}.tar.gz
-# Source0-md5:	4f76fba2322e2e94ba0678bdfda8e34a
+# Source0-md5:	a9b3be3c864b98eeb1f8b9acbac6c118
 URL:		http://pimple.sensiolabs.org/
+BuildRequires:	%{php_name}-dom
 BuildRequires:	%{php_name}-iconv
 BuildRequires:	%{php_name}-spl
 %if %{with tests}
